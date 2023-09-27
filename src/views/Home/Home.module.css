@@ -1,0 +1,389 @@
+.wrapper{
+  overflow-x: hidden;
+}
+
+.lv{
+  position: relative;
+  min-height: 100vh;
+  max-height: 100vh;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.lvVideo{
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lvVideo video{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.lvTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+  position: absolute;
+  z-index: 2;
+  font-family: Gucci;
+  font-size: 65px;
+  color: white;
+}
+
+.lvExplore{
+  z-index: 2;
+  font-family: Gucci;
+  color: white;
+  width: fit-content;
+}
+
+.lvExplore button{
+  border: none;
+  background-color: rgb(0, 0, 0, 0.35);
+  padding: 0.5rem 3rem;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: Gucci;
+  transition: all 0.3s ease;
+}
+
+
+.lvExplore button:hover{
+  padding: 0.5rem 4rem;
+  background-color: rgb(0, 0, 0, 0.60);
+}
+
+/* GUCCI */
+.gucci{
+  position: relative;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.gucciVideo{
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.gucciVideo video{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+
+.gucciTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+  position: absolute;
+  z-index: 2;
+  font-family: Gucci;
+  font-size: 65px;
+  color: white;
+}
+
+.gucciExplore{
+  z-index: 2;
+  font-family: Gucci;
+  color: white;
+  width: fit-content;
+}
+
+.gucciExplore button{
+  border: none;
+  background-color: rgb(0, 0, 0, 0.35);
+  padding: 0.5rem 3rem;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: Gucci;
+  transition: all 0.3s ease;
+}
+
+.gucciExplore button:hover{
+  padding: 0.5rem 4rem;
+  background-color: rgb(0, 0, 0, 0.60);
+}
+
+
+.fendi{
+  position: relative;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.fendiVideo{
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.fendiVideo video{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+
+.fendiTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+  position: absolute;
+  z-index: 2;
+  font-family: Gucci;
+  font-size: 65px;
+  color: white;
+}
+
+.fendiExplore{
+  z-index: 2;
+  font-family: Gucci;
+  color: white;
+  width: fit-content;
+}
+
+.fendiExplore button{
+  border: none;
+  background-color: rgb(0, 0, 0, 0.35);
+  padding: 0.5rem 3rem;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: Gucci;
+  transition: all 0.3s ease;
+}
+
+.fendiExplore button:hover{
+  padding: 0.5rem 4rem;
+  background-color: rgb(0, 0, 0, 0.60);
+}
+
+
+.dolce{
+  position: relative;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.dolceVideo{
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.dolceVideo video{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+
+.dolceTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+  position: absolute;
+  z-index: 2;
+  font-family: Gucci;
+  font-size: 65px;
+  color: white;
+}
+
+.dolceExplore{
+  z-index: 2;
+  font-family: Gucci;
+  color: white;
+  width: fit-content;
+}
+
+.dolceExplore button{
+  border: none;
+  background-color: rgb(0, 0, 0, 0.35);
+  padding: 0.5rem 3rem;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: Gucci;
+  transition: all 0.3s ease;
+}
+
+.dolceExplore button:hover{
+  padding: 0.5rem 4rem;
+  background-color: rgb(0, 0, 0, 0.60);
+}
+
+
+.jimmy{
+  position: relative;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.jimmyVideo{
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.jimmyVideo video{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+
+.jimmyTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+  position: absolute;
+  z-index: 2;
+  font-family: Gucci;
+  font-size: 65px;
+  color: white;
+}
+
+.jimmyExplore{
+  z-index: 2;
+  font-family: Gucci;
+  color: white;
+  width: fit-content;
+}
+
+.jimmyExplore button{
+  border: none;
+  background-color: rgb(0, 0, 0, 0.35);
+  padding: 0.5rem 3rem;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: Gucci;
+  transition: all 0.3s ease;
+}
+
+.jimmyExplore button:hover{
+  padding: 0.5rem 4rem;
+  background-color: rgb(0, 0, 0, 0.60);
+}
+
+
+.controls{
+  position: absolute;
+  bottom: 20px;
+  right: -50px;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.play{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.volume{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -55px;
+  margin-bottom: 3.3px;
+  width: fit-content;
+  z-index: 5;
+}
+
+.volume i{
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.play i{
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+
+.progress {
+  transform: rotate(90deg);
+  border-radius: 0px;
+  margin-right: 14px;
+  margin-bottom: -25px;
+}
+.progress::-webkit-progress-bar {
+  background-color: rgba(255, 255, 255, 0.509);
+  border-radius: 0px;
+  width: 140px;
+  height: 3px;
+}
+.progress::-webkit-progress-value {
+  background-color: white;
+  border-radius: 0px;
+}

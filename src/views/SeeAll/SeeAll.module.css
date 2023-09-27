@@ -1,0 +1,173 @@
+.container{
+  height: 100%;
+  width: 100vw;
+}
+
+
+.title{
+  position: relative;
+}
+
+.title h2{
+  font-family: Futura;
+  text-align: center;
+  padding: 2rem 0rem;
+  background-color:white;
+  border-bottom: 1px solid whitesmoke;
+  color: #19110b;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+}
+
+.subTitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 48px;
+  padding-bottom: 19px;
+}
+
+.subTitle span{
+  font-family: LVRegular;
+  font-size: 14.5px;
+}
+
+.subTitle .totalItems{
+  font-size: 12px;
+}
+
+.filterButton{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.filterButton button{
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: LVRegular;
+  font-size: 12.5px;
+  letter-spacing: 0.8px;
+  background-color: transparent;
+  border: 1px solid #1f1f1f;
+}
+
+.items{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+
+.goBack{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.goBack i{
+  font-size: 22px;
+}
+
+.filters{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.3vw;
+  width: 35%;
+  gap: 20px;
+}
+
+.filterBy{
+  white-space: nowrap;
+  font-family: LVRegular;
+}
+
+
+.loginInput{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginInput span{
+  color: #666565;
+  font-family: LVRegular;
+  font-size: 14px;
+  margin-bottom: 0.5vh;
+}
+
+.loginInput input{
+  width: 100%;
+  border: 1px solid #eeeded;
+  border-radius: 0.1rem;
+  padding: 1.5vh 1vw;
+  font-size: 13.5px;
+  letter-spacing: 0.5px;
+  font-family: LVRegular;
+  transition: border 0.4s ease;
+}
+
+
+
+.loginInput input:hover{
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.loginInput input::placeholder{
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+
+.loginInput input:focus{
+  outline: none;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.tailSpin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+}
+
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 3px;
+}
+
+.pagination span{
+  font-family: LVRegular;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+
+.pagination i{
+  cursor: pointer;
+  font-size: 18px !important;
+}
+
+
+.filterContainer{
+  display: flex;
+  align-items: center;
+}

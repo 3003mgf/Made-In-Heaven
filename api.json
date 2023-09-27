@@ -1,0 +1,28 @@
+
+
+
+[
+  {
+    "name":"WOMEN'S STUDDED PUMP",
+    "brand": "Gucci",
+    "description":"Distinctive shapes brought to life by unexpected details, such as this women's pump defined by a curved silhouette and multi-buckle ankle straps. The studs and eyelet detailing lends a rock vibe to the style",
+    "specifications": "@Black leather @Women's @Studs and eyelets @Pointed toe @Leather sole @Multi-buckles closure @Mid-heel @3' heel height @Made in Italy",
+    "categories":["Heels", "Women"],
+    "colors":["Black"],
+    "sizes": ["35", "35.5", "36", "36.5", "37", "37.5", "38", "38.5", "39", "39.5"],
+    "images":[
+      {
+        "color":"Black",
+        "images": ["https://nerdy-my-ecommerce.s3.us-east-2.amazonaws.com/Gucci/Nacho/Heels/t15/t15-1.avif", "https://nerdy-my-ecommerce.s3.us-east-2.amazonaws.com/Gucci/Nacho/Heels/t15/t15-2.avif", "https://nerdy-my-ecommerce.s3.us-east-2.amazonaws.com/Gucci/Nacho/Heels/t15/t15-3.avif", "https://nerdy-my-ecommerce.s3.us-east-2.amazonaws.com/Gucci/Nacho/Heels/t15/t15-4.avif", "https://nerdy-my-ecommerce.s3.us-east-2.amazonaws.com/Gucci/Nacho/Heels/t15/t15-5.avif", "https://nerdy-my-ecommerce.s3.us-east-2.amazonaws.com/Gucci/Nacho/Heels/t15/t15-6.avif"]
+      }
+    ],
+    "price": 2190,
+    "stock": [
+      {
+        "color": "Black",
+        "stock": 100,
+        "sold": 0
+      }
+    ]
+  }
+]

@@ -1,0 +1,145 @@
+.wrapper{
+  padding: 1rem 1.5rem;
+  height: 100%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+
+.whiteContainer{
+  margin-top: 1rem;
+  background-color: white;
+}
+
+
+.stepDiv{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+}
+
+.stepDiv span:last-child{
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.step{
+  width: 16.5px;
+  height: 16.5px;
+  background-color: #ba3763c1;
+  color: whitesmoke;
+  border-radius: 50px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  background-color:white;
+  padding: 1rem 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.next{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-right: 1rem;
+  margin-top: 2.5rem;
+  padding: 0rem 3.3rem;
+  padding-bottom: 1.5rem;
+}
+
+.next button{
+  border: 1px solid black;
+  padding: 0.5rem 1.7rem;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  color: #1f1f1f;
+  font-family: LVRegular;
+}
+
+.prev{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.prev i{
+  color: #777777;
+  transition: scale 0.3s ease;
+}
+
+.prev i:hover{
+  scale: 1.1;
+}
+
+
+.form input{
+  font-size: 12px !important;
+  font-family: LVRegular;
+  border-radius: 0px !important;
+  border-bottom: 1px solid black !important;
+}
+
+.form select{
+  font-size: 12px !important;
+  font-family: LVRegular;
+}
+
+.form label{
+  font-size: 13px !important;
+  font-family: LVRegular;
+}
+
+.form label::after{
+  background-color: transparent !important;
+}
+
+
+.sectionIndicator{
+  padding-left: 0rem;
+  background-color: white;
+  padding: 32px 2rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.sectionIndicator .sectionTitle{
+  font-size: 21px;
+  font-family: Futura;
+  letter-spacing: 0.5px;
+}
+
+.stepIndicator{
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  font-size: 19px;
+  font-family: LVRegular;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: white;
+}
+
+.methodsDiv{
+  padding: 0rem 3.3rem;
+}
