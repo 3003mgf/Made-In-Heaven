@@ -5,6 +5,8 @@ import { reviewsSlice } from "../features/reviews/reviewsSlice";
 
 export const store = configureStore({
   reducer:{
-    user: userSlice.reducer
+    user: userSlice.reducer,
+    products: productSlice.reducer,
+    reviews: reviewsSlice.reducer
   }
 })

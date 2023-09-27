@@ -1,0 +1,139 @@
+.backgroundImg{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: cover;
+  z-index: 1;
+}
+
+/*small*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .backgroundImg {
+    background-image: url("https://media.gucci.com/content/EditorialCarouselSlideSmall_375x1100/1588760104/EditorialCarouselSlideSmall_country-selector_001_Default.jpg");
+  }
+}
+/*standard*/
+@media only screen and (min-width: 1024px) {
+  .backgroundImg {
+    background-image: url("https://media.gucci.com/content/EditorialCarouselSlideStandard_1600x1070/1588760104/EditorialCarouselSlideStandard_country-selector_001_Default.jpg");
+  }
+}
+/*medium retina*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi) {
+  .backgroundImg {
+    background-image: url("https://media.gucci.com/content/EditorialCarouselSlideMedium_1536x2200/1588760104/EditorialCarouselSlideMedium_country-selector_001_Default.jpg");
+  }
+}
+/*small-retina*/
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi) {
+  .backgroundImg {
+    background-image: url("https://media.gucci.com/content/EditorialCarouselSlideSmall_750x2200/1588760104/EditorialCarouselSlideSmall_country-selector_001_Default.jpg");
+  }
+}
+/*standard-retina*/
+@media only screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 192dpi) {
+  .backgroundImg {
+    background-image: url("https://media.gucci.com/content/EditorialCarouselSlideStandard_3200x2140/1588760104/EditorialCarouselSlideStandard_country-selector_001_Default.jpg");
+  }
+}
+
+
+.container{
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+}
+
+.container h1{
+  position: fixed;
+  top: 0;
+  text-align: center;
+  letter-spacing: 20px;
+  color: white;
+  transition: all 1s ease;
+  transition-timing-function: 1s ease-in;
+  font-family: Gucci;
+}
+
+.container span{
+  margin-left: -12px;
+  cursor: default;
+  letter-spacing: 3px;
+  font-family: Gucci;
+  color: white;
+  font-weight: 100;
+  margin-top: 8rem;
+  font-size: 18px;
+  transition: all 2s ease;
+  transition-timing-function: 2s ease-in;
+}
+
+
+
+.location{
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(211, 211, 211, 0.249);
+  padding: 2rem;
+  transition: all 1s ease;
+  transition-timing-function: 1s ease-in;
+}
+
+.location span{
+  margin-left: 0;
+  margin-top: 0rem;
+  font-size: 13px;
+  transition: none;
+  transition-timing-function: none;
+}
+
+
+.location select{
+  margin-top: 1rem;
+  border: none;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+}
+
+
+
+.dropDown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.button button{
+  border: none;
+  width: 350px;
+  font-family: Gucci;
+  font-size: 11px;
+  padding: 0.5rem 1rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.button button:hover{
+  filter: brightness(160%);
+}
+
