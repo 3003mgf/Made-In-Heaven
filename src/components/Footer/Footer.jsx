@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import styles from "./Footer.module.css";
 import { GlobalContext } from '../../context/globalContext';
+import { Translate } from 'react-auto-translate';
 
 const Footer = ({refFooter}) => {
 
@@ -38,7 +39,7 @@ const Footer = ({refFooter}) => {
           </div>
           <div className={styles.supportContainer}>
             {/* <i class='bx bx-support'></i> */}
-            <a href="mailto:madeinheaven@gmail.com">CONTACT US</a>
+            <a href="mailto:madeinheaven@gmail.com"><Translate>CONTACT US</Translate></a>
           </div>
       </div>
    );

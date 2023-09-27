@@ -53,7 +53,7 @@ const Profile = () => {
   };
 
   const handleOpenPassword = () =>{
-    if(!user.googleUser || !user.githubUser){
+    if(!user.googleUser && !user.githubUser){
       setOpenPassword(true);
     }else if(user.googleUser){
       refToast.current.show({life: 3000, severity: "info", summary: `We're sorry!`, detail: `Google users can't change their password`});

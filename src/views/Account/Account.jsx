@@ -294,8 +294,13 @@ const Account = () => {
                 }
               </div>
               <div className={styles.blackButton}>
-                <button><Translate>View Orders</Translate></button>               
-                {/* <button>Start Shopping</button> */}
+                {
+                  userOrders.length ? (
+                    <button onClick={()=> navigate("/account/orders")}><Translate>View Orders</Translate></button>               
+                  ):(
+                    <button onClick={()=> navigate("/ourStore")}><Translate>Start Shopping</Translate></button>
+                  )
+                }
               </div>
             </div>
           </div>
