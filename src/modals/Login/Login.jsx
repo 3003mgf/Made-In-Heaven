@@ -309,10 +309,10 @@ const LoginModal = () => {
                   <i className="fa-brands fa-github" style={{color: "#fff", fontSize:"22px"}}></i>
                   <span><Translate>Login with GitHub</Translate></span>
                 </button>
-                <button className={styles.fbLogin}>
+                {/* <button className={styles.fbLogin}>
                   <i className="fa-brands fa-facebook" style={{color: "white", fontSize:"22px"}}></i>
                   <span><Translate>Login with Facebook</Translate></span>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
