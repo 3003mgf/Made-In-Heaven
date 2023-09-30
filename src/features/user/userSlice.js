@@ -151,7 +151,7 @@ export const emptyCart = createAsyncThunk("emptyCart", async(data, thunkAPI) => 
   }
 });
 
-export const clearUserMessage = createAction("create-user-message");
+export const clearUserMessage = createAction("clear-user-message");
 
 
 
@@ -473,6 +473,7 @@ export const userSlice = createSlice({
           // ACTIONS
           .addCase(clearUserMessage, (state)=>{
             state.message = "";
+            state.message2 = "";
           })
 
   }

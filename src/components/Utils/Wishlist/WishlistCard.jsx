@@ -12,7 +12,7 @@ import {
   EmailIcon
 } from "react-share";
 import { useDispatch, useSelector } from 'react-redux';
-import { cartToggle, favToggle } from '../../../features/user/userSlice';
+import { cartToggle, clearUserMessage, favToggle } from '../../../features/user/userSlice';
 import { TailSpin } from 'react-loader-spinner';
 import { Toast } from 'primereact/toast';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
@@ -49,22 +49,35 @@ const WishlistCard = ({el, index, userId}) => {
 
 
   const placeInCart = () => {
-    if(!colorSelected){
-      return refToast.current.show({life: 3000, severity: "warn", summary: `Wait!`, detail: `Please select a color`})
-    };
-    if(!sizeSelected){
-      return refToast.current.show({life: 3000, severity: "warn", summary: `Wait!`, detail: `Please select a size`})
-    };
-    dispatch(cartToggle({
-      userId: user?.id,
-      product: {
-        ...el,
-        color: colorSelected,
-        images,
-        size: sizeSelected,
-        quantity: 1
-      }
-    }));
+    if(!alreadyInCart){
+      if(!colorSelected){
+        return refToast.current.show({life: 3000, severity: "warn", summary: `Wait!`, detail: `Please select a color`})
+      };
+      if(!sizeSelected){
+        return refToast.current.show({life: 3000, severity: "warn", summary: `Wait!`, detail: `Please select a size`})
+      };
+      dispatch(cartToggle({
+        userId: user?.id,
+        product: {
+          ...el,
+          color: colorSelected,
+          images,
+          size: sizeSelected,
+          quantity: 1
+        }
+      }));
+    }else{
+      dispatch(cartToggle({
+        userId: user?.id,
+        product: {
+          ...el,
+          color: colorSelected,
+          images,
+          size: sizeSelected,
+          quantity: 1
+        }
+      }));
+    }
   };
 
   const handleColor = (color) =>{
@@ -97,14 +110,17 @@ const WishlistCard = ({el, index, userId}) => {
 
   useEffect(() => {
     if(message2 === `Item added to cart ${el.id}`){
-      return setProductAdded({
+      setProductAdded({
         ...el,
         color: colorSelected,
         size: sizeSelected
       });
+      dispatch(clearUserMessage());
     };
      if(message2 === `Item removed from cart ${el.id}`){
-      return refToast.current.show({life: 3000, severity: "success", summary: `Done!`, detail: `Item removed from cart`});
+      refToast.current.show({life: 3000, severity: "success", summary: `Done!`, detail: `Item removed from cart`});
+      dispatch(clearUserMessage());
+      
     };
   }, [message2]);
 

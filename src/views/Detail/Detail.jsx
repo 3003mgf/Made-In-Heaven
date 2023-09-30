@@ -8,7 +8,7 @@ import { Translate } from 'react-auto-translate';
 import { Dropdown } from 'primereact/dropdown';
 import AccountHeader from '../../components/AccountHeader/AccountHeader';
 import DetailColor from '../../modals/Detail/Color/DetailColor';
-import { cartToggle, favToggle } from '../../features/user/userSlice';
+import { cartToggle, clearUserMessage, favToggle } from '../../features/user/userSlice';
 import { TailSpin } from 'react-loader-spinner';
 import AddedToCart from '../../modals/Cart/Added/Added';
 import { Toast } from 'primereact/toast';
@@ -141,14 +141,16 @@ const Detail = () => {
 
   useEffect(() => {
     if(userMessage === "Item added to cart"){
-      return setProductAdded({
+      setProductAdded({
         ...product,
         color: detailColor,
         size: sizeSelected
       });
+      dispatch(clearUserMessage());
     };
     if(userMessage === "Item removed from cart"){
-      return refToast.current.show({life: 3000, severity: "success", summary: `Done!`, detail: `Item removed from cart`});
+      refToast.current.show({life: 2000, severity: "success", summary: `Done!`, detail: `Item removed from cart`});
+      dispatch(clearUserMessage());
     };
   }, [userMessage]);
 

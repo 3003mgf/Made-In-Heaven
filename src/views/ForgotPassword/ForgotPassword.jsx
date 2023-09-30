@@ -43,7 +43,10 @@ const ForgotPassword = () => {
     };
     if(message === "User not found"){
       refToast.current.show({life: 3000, severity: "warn", summary: "We're sorry!", detail: `We couldn't find any account associated with that email`});
-    }
+    };
+    if(message === "Not available"){
+      refToast.current.show({life: 3000, severity: "warn", summary: "We're sorry!", detail: `This functionality is not available for Github and Google users`});
+    };
   }, [message]);
 
   return ( 

@@ -36,14 +36,14 @@ const CartModal = () => {
     dispatch(cartToggle({
       userId: user?.id,
       product: el
-    }))
+    }));
   };
 
   useEffect(() => {
     if(user){
-      // if(!user.cart){
-      //   return setUserCart([]);
-      // };
+      if(!user.cart){
+        return setUserCart([]);
+      };
       if(typeof user.cart === "string"){
         return setUserCart(JSON.parse(user.cart));
       }else{
@@ -130,7 +130,7 @@ const CartModal = () => {
                     )
                   }
                   <div className={styles.itemsButton} onClick={handleClick}>
-                    <button><Translate>{userCart.length ? "Checkout" : "Start Shopping"}</Translate></button>
+                    <button><Translate>{userCart?.length ? "Checkout" : "Start Shopping"}</Translate></button>
                   </div>
                 </div>
             </div>

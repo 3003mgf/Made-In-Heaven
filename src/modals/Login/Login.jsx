@@ -319,7 +319,7 @@ const LoginModal = () => {
           <div className={styles.register}>
             <h6><Translate>I do not have an account</Translate></h6>
             <span className={styles.benefits}><Translate>Enjoy additional benefits and a more intense experience by creating a personal account.</Translate></span>
-            <button className={styles.createAccount} onClick={()=> navigate("/signUp")}><Translate>Create an account</Translate></button>
+            <button className={styles.createAccount} onClick={()=> {navigate("/signUp") ; setShowLoginModal(false)}}><Translate>Create an account</Translate></button>
           </div>
         </div>
       </div>
